@@ -8,6 +8,7 @@ Aqui estão os projetos desenvolvidos durante o curso:
 
 - **[ContaBanco](./ContaBanco):** Um simples simulador de terminal bancário para praticar conceitos básicos de Java.
 - **[DesafioControleFluxo](./DesafioControleFluxo):** Um programa que recebe dois números e imprime um intervalo, tratando exceções.
+- **[iPhonePOO](./iPhonePOO):** Uma aplicação prática dos pilares da Programação Orientada a Objetos através da modelagem de um iPhone.
 
 ---
 *Desafio proposto por [Gleyson Sampaio](https://github.com/glysns).*
