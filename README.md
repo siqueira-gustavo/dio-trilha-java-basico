@@ -1,18 +1,15 @@
-## Getting Started
+# DIO - Trilha Java Básico
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Repositório para armazenar os projetos e desafios do curso de Java Básico da [Digital Innovation One](https://www.dio.me/).
 
-## Folder Structure
+## Projetos
 
-The workspace contains two folders by default, where:
+Aqui estão os projetos desenvolvidos durante o curso:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- **[ContaBanco](./ContaBanco):** Um simples simulador de terminal bancário para praticar conceitos básicos de Java.
+- **[DesafioControleFluxo](./DesafioControleFluxo):** Um programa que recebe dois números e imprime um intervalo, tratando exceções.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+---
+*Desafio proposto por [Gleyson Sampaio](https://github.com/glysns).*
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+*Desenvolvido por [Gustavo Siqueira](https://github.com/siqueira-gustavo).*
