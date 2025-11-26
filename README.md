@@ -10,6 +10,7 @@ Aqui estão os projetos desenvolvidos durante o curso:
 - **[DesafioControleFluxo](./DesafioControleFluxo):** Um programa que recebe dois números e imprime um intervalo, tratando exceções.
 - **[iPhonePOO](./iPhonePOO):** Uma aplicação prática dos pilares da Programação Orientada a Objetos através da modelagem de um iPhone.
 - **[BancoDigitalOO](./BancoDigitalOO):** Implementação de um banco digital para praticar e aprofundar conceitos de POO, como Herança, Polimorfismo e Encapsulamento.
+- **[BootcampPOO](./BootcampPOO):** Abstração de um bootcamp e seus componentes (cursos, mentorias, devs) para exercitar a modelagem em POO.
 
 ---
 *Desafio proposto por [Gleyson Sampaio](https://github.com/glysns).*
