@@ -42,3 +42,4 @@ Este projeto demonstra a implementação de alguns padrões de projeto clássico
 
     ```bash
     java -cp bin one.digitalinnovation.gof.Test
+    ```
