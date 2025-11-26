@@ -1,10 +1,15 @@
 package one.digitalinnovation.gof;
 
 import one.digitalinnovation.gof.facade.Facade;
+import one.digitalinnovation.gof.singleton.SingletonEager;
+import one.digitalinnovation.gof.singleton.SingletonEnum;
+import one.digitalinnovation.gof.singleton.SingletonLazyHolder;
 import one.digitalinnovation.gof.strategy.Comportamento;
 import one.digitalinnovation.gof.strategy.ComportamentoAgressivo;
 import one.digitalinnovation.gof.strategy.ComportamentoDefensivo;
 import one.digitalinnovation.gof.strategy.ComportamentoNormal;
+import one.digitalinnovation.gof.strategy.Observador;
+import one.digitalinnovation.gof.strategy.PainelDeControle;
 import one.digitalinnovation.gof.strategy.Robo;
 
 public class Test {
@@ -14,18 +19,34 @@ public class Test {
         // Singleton
         System.out.println("--- Testes do Padrão Singleton ---");
         SingletonLazyHolder lazyHolder = SingletonLazyHolder.getInstancia();
-        System.out.println(lazyHolder);
+        System.out.println("Lazy Holder: " + lazyHolder);
         lazyHolder = SingletonLazyHolder.getInstancia();
-        System.out.println(lazyHolder);
+        System.out.println("Lazy Holder: " + lazyHolder);
+
+        SingletonEager eager = SingletonEager.getInstancia();
+        System.out.println("Eager: " + eager);
+        eager = SingletonEager.getInstancia();
+        System.out.println("Eager: " + eager);
+
+        SingletonEnum enumSingleton = SingletonEnum.INSTANCIA;
+        System.out.print("Enum: ");
+        enumSingleton.imprimirValor();
+        enumSingleton = SingletonEnum.INSTANCIA;
+        System.out.print("Enum: ");
+        enumSingleton.imprimirValor();
         System.out.println();
 
-        // Strategy
-        System.out.println("--- Testes do Padrão Strategy ---");
+
+        // Strategy com Observer
+        System.out.println("--- Testes dos Padrões Strategy e Observer ---");
         Comportamento normal = new ComportamentoNormal();
         Comportamento defensivo = new ComportamentoDefensivo();
         Comportamento agressivo = new ComportamentoAgressivo();
+        
+        Robo robo = new Robo("R2-D2");
+        Observador painel = new PainelDeControle();
+        robo.adicionarObservador(painel);
 
-        Robo robo = new Robo();
         robo.setComportamento(normal);
         robo.mover();
         robo.setComportamento(defensivo);
@@ -38,5 +59,7 @@ public class Test {
         System.out.println("--- Testes do Padrão Facade ---");
         Facade facade = new Facade();
         facade.migrarCliente("Venilton", "14801788");
+        System.out.println("--- Tentando migrar cliente já existente ---");
+        facade.migrarCliente("Gustavo", "14801789");
     }
 }

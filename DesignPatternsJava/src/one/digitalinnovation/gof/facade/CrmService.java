@@ -13,4 +13,9 @@ public class CrmService {
         System.out.println(cidade);
         System.out.println(estado);
     }
+
+    public static boolean clienteExiste(String nome) {
+        // Simula a verificação de existência do cliente
+        return !nome.equals("Venilton");
+    }
 }
