@@ -4,10 +4,7 @@ import one.digitalinnovation.gof.facade.Facade;
 import one.digitalinnovation.gof.singleton.SingletonEager;
 import one.digitalinnovation.gof.singleton.SingletonEnum;
 import one.digitalinnovation.gof.singleton.SingletonLazyHolder;
-import one.digitalinnovation.gof.strategy.Comportamento;
-import one.digitalinnovation.gof.strategy.ComportamentoAgressivo;
-import one.digitalinnovation.gof.strategy.ComportamentoDefensivo;
-import one.digitalinnovation.gof.strategy.ComportamentoNormal;
+import one.digitalinnovation.gof.strategy.ComportamentoStrategyFactory;
 import one.digitalinnovation.gof.strategy.Observador;
 import one.digitalinnovation.gof.strategy.PainelDeControle;
 import one.digitalinnovation.gof.strategy.Robo;
@@ -39,19 +36,15 @@ public class Test {
 
         // Strategy com Observer
         System.out.println("--- Testes dos Padrões Strategy e Observer ---");
-        Comportamento normal = new ComportamentoNormal();
-        Comportamento defensivo = new ComportamentoDefensivo();
-        Comportamento agressivo = new ComportamentoAgressivo();
-        
         Robo robo = new Robo("R2-D2");
         Observador painel = new PainelDeControle();
         robo.adicionarObservador(painel);
 
-        robo.setComportamento(normal);
+        robo.setComportamento(ComportamentoStrategyFactory.NORMAL.getComportamento());
         robo.mover();
-        robo.setComportamento(defensivo);
+        robo.setComportamento(ComportamentoStrategyFactory.DEFENSIVO.getComportamento());
         robo.mover();
-        robo.setComportamento(agressivo);
+        robo.setComportamento(ComportamentoStrategyFactory.AGRESSIVO.getComportamento());
         robo.mover();
         System.out.println();
 
