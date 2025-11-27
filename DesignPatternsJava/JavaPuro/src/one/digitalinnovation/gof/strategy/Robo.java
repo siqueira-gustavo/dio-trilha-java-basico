@@ -1,4 +1,4 @@
-package one.digitalinnovation.gof.strategy;
+package strategy;
 
 import java.util.ArrayList;
 import java.util.List;

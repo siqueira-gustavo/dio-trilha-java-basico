@@ -1,16 +1,18 @@
-package com.example.demo.service.impl;
+package one.digitalinnovation.gof.service.impl;
 
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.model.Cliente;
-import com.example.demo.model.ClienteRepository;
-import com.example.demo.model.Endereco;
-import com.example.demo.model.EnderecoRepository;
-import com.example.demo.service.ClienteService;
-import com.example.demo.service.ViaCepService;
+import one.digitalinnovation.gof.model.Cliente;
+import one.digitalinnovation.gof.model.ClienteRepository;
+import one.digitalinnovation.gof.model.Endereco;
+import one.digitalinnovation.gof.model.EnderecoRepository;
+import one.digitalinnovation.gof.service.ClienteService;
+import one.digitalinnovation.gof.service.ViaCepService;
+import one.digitalinnovation.gof.service.ClienteInseridoEvent;
 
 @Service
 public class ClienteServiceImpl implements ClienteService {
@@ -21,6 +23,8 @@ public class ClienteServiceImpl implements ClienteService {
     private EnderecoRepository enderecoRepository;
     @Autowired
     private ViaCepService viaCepService;
+    @Autowired
+    private ApplicationEventPublisher eventPublisher;
 
     @Override
     public Iterable<Cliente> buscarTodos() {
@@ -60,5 +64,6 @@ public class ClienteServiceImpl implements ClienteService {
         });
         cliente.setEndereco(endereco);
         clienteRepository.save(cliente);
+        eventPublisher.publishEvent(new ClienteInseridoEvent(this, cliente));
     }
 }

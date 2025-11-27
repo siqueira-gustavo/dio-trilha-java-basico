@@ -1,4 +1,4 @@
-package one.digitalinnovation.gof.facade;
+package facade;
 
 public class CrmService {
 

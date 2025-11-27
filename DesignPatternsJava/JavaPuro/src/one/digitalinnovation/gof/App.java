@@ -1,15 +1,13 @@
-package one.digitalinnovation.gof;
+import facade.Facade;
+import singleton.SingletonEager;
+import singleton.SingletonEnum;
+import singleton.SingletonLazyHolder;
+import strategy.ComportamentoStrategyFactory;
+import strategy.Observador;
+import strategy.PainelDeControle;
+import strategy.Robo;
 
-import one.digitalinnovation.gof.facade.Facade;
-import one.digitalinnovation.gof.singleton.SingletonEager;
-import one.digitalinnovation.gof.singleton.SingletonEnum;
-import one.digitalinnovation.gof.singleton.SingletonLazyHolder;
-import one.digitalinnovation.gof.strategy.ComportamentoStrategyFactory;
-import one.digitalinnovation.gof.strategy.Observador;
-import one.digitalinnovation.gof.strategy.PainelDeControle;
-import one.digitalinnovation.gof.strategy.Robo;
-
-public class Test {
+public class App {
 
     public static void main(String[] args) {
 

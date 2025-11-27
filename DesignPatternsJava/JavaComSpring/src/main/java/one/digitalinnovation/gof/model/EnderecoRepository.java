@@ -1,6 +1,5 @@
-package com.example.demo.repository;
+package one.digitalinnovation.gof.model;
 
-import com.example.demo.model.Endereco;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

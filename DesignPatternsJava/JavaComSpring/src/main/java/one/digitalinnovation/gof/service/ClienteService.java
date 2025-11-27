@@ -1,6 +1,6 @@
-package com.example.demo.service;
+package one.digitalinnovation.gof.service;
 
-import com.example.demo.model.Cliente;
+import one.digitalinnovation.gof.model.Cliente;
 
 public interface ClienteService {
 

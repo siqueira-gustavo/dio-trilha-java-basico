@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package one.digitalinnovation.gof.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
