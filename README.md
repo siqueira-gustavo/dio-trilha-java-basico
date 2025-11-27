@@ -11,6 +11,7 @@ Aqui estão os projetos desenvolvidos durante o curso:
 - **[iPhonePOO](./iPhonePOO):** Uma aplicação prática dos pilares da Programação Orientada a Objetos através da modelagem de um iPhone.
 - **[BancoDigitalOO](./BancoDigitalOO):** Implementação de um banco digital para praticar e aprofundar conceitos de POO, como Herança, Polimorfismo e Encapsulamento.
 - **[BootcampPOO](./BootcampPOO):** Abstração de um bootcamp e seus componentes (cursos, mentorias, devs) para exercitar a modelagem em POO.
+- **[DesignPatternsJava](./DesignPatternsJava):** Implementação de Padrões de Projeto em Java, com uma versão em `Java Puro` e outra usando o `Spring Framework`.
 
 ---
 *Desafio proposto por [Gleyson Sampaio](https://github.com/glysns).*
