@@ -1,4 +1,4 @@
-public class Main {
+public class App {
 
     public static void main(String[] args) {
         // Criação do Banco
@@ -42,7 +42,7 @@ public class Main {
         } catch (SaldoInsuficienteException e) {
             System.out.println("Erro inesperado: " + e.getMessage());
         }
-        
+
         // Extrato após saques
         ccGustavo.imprimirExtrato();
 

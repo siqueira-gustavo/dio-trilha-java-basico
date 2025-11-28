@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Main {
+public class App {
     public static void main(String[] args) {
         Curso curso1 = new Curso();
         curso1.setTitulo("Curso Java");

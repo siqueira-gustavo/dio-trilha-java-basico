@@ -6,12 +6,12 @@ Este projeto explora a implementação de Padrões de Projeto (Design Patterns) 
 
 O repositório está dividido em duas pastas principais:
 
-1. **[JavaPuro](./JavaPuro):**
+1. **[Java Puro](../DesignPatternsJavaPuro):**
     - **Descrição:** Implementa os padrões de projeto Singleton, Strategy, e Facade utilizando apenas recursos nativos da linguagem Java.
     - **Foco:** O objetivo desta versão é demonstrar a implementação manual e o entendimento fundamental de cada padrão.
     - **Evoluções:** O projeto foi aprimorado para incluir a combinação de padrões, como o uso do **Observer** para notificar mudanças na `Strategy` e um **Factory Method** para desacoplar a criação das estratégias.
 
-2. **[JavaComSpring](./JavaComSpring):**
+2. **[Java Com Spring](../DesignPatternsJavaComSpring):**
     - **Descrição:** Reimplementa a mesma lógica de negócio (um CRUD de clientes com busca de CEP), mas utilizando os recursos do Spring Framework para aplicar os padrões de projeto de forma mais idiomática e produtiva.
     - **Padrões com Spring:**
         - **Singleton:** Gerenciado automaticamente pelo contêiner de Inversão de Controle (IoC) do Spring com anotações como `@Service` e `@RestController`.
