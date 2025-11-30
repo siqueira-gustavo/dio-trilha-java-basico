@@ -10,9 +10,9 @@ import one.digitalinnovation.gof.model.Cliente;
 import one.digitalinnovation.gof.model.ClienteRepository;
 import one.digitalinnovation.gof.model.Endereco;
 import one.digitalinnovation.gof.model.EnderecoRepository;
+import one.digitalinnovation.gof.service.ClienteInseridoEvent;
 import one.digitalinnovation.gof.service.ClienteService;
 import one.digitalinnovation.gof.service.ViaCepService;
-import one.digitalinnovation.gof.service.ClienteInseridoEvent;
 
 @Service
 public class ClienteServiceImpl implements ClienteService {
@@ -33,6 +33,9 @@ public class ClienteServiceImpl implements ClienteService {
 
     @Override
     public Cliente buscarPorId(Long id) {
+        if (id == null) {
+            return null;
+        }
         Optional<Cliente> cliente = clienteRepository.findById(id);
         return cliente.get();
     }
@@ -44,6 +47,9 @@ public class ClienteServiceImpl implements ClienteService {
 
     @Override
     public void atualizar(Long id, Cliente cliente) {
+        if (id == null) {
+            return;
+        }
         Optional<Cliente> clienteBd = clienteRepository.findById(id);
         if (clienteBd.isPresent()) {
             salvarClienteComCep(cliente);
@@ -52,13 +58,25 @@ public class ClienteServiceImpl implements ClienteService {
 
     @Override
     public void deletar(Long id) {
+        if (id == null) {
+            return;
+        }
         clienteRepository.deleteById(id);
     }
 
     private void salvarClienteComCep(Cliente cliente) {
+        if (cliente == null) {
+            return;
+        }
         String cep = cliente.getEndereco().getCep();
+        if (cep == null || cep.isEmpty()) {
+            return;
+        }
         Endereco endereco = enderecoRepository.findById(cep).orElseGet(() -> {
             Endereco novoEndereco = viaCepService.consultarCep(cep);
+            if (novoEndereco == null) {
+                return null;
+            }
             enderecoRepository.save(novoEndereco);
             return novoEndereco;
         });

@@ -1,4 +1,4 @@
-public class App {
+public class BancoDigitalMain {
 
     public static void main(String[] args) {
         // Criação do Banco

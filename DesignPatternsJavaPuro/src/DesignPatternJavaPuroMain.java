@@ -7,7 +7,7 @@ import strategy.Observador;
 import strategy.PainelDeControle;
 import strategy.Robo;
 
-public class App {
+public class DesignPatternJavaPuroMain {
 
     public static void main(String[] args) {
 
@@ -30,7 +30,6 @@ public class App {
         System.out.print("Enum: ");
         enumSingleton.imprimirValor();
         System.out.println();
-
 
         // Strategy com Observer
         System.out.println("--- Testes dos Padrões Strategy e Observer ---");

@@ -66,10 +66,10 @@ classDiagram
     javac -d bin src/*.java
     ```
 
-3. Execute a classe `Main`:
+3. Execute a classe `BootcampMain`:
 
     ```bash
-    java -cp bin Main
+    java -cp bin BootcampMain
     ```
 
 ## Resultado Esperado

@@ -12,6 +12,7 @@ Aqui estão os projetos desenvolvidos durante o curso:
 - **[BancoDigitalOO](./BancoDigitalOO):** Implementação de um banco digital para praticar e aprofundar conceitos de POO, como Herança, Polimorfismo e Encapsulamento.
 - **[BootcampPOO](./BootcampPOO):** Abstração de um bootcamp e seus componentes (cursos, mentorias, devs) para exercitar a modelagem em POO.
 - **[DesignPatternsJava](./DesignPatternsJava):** Implementação de Padrões de Projeto em Java, com uma versão em `Java Puro` e outra usando o `Spring Framework`.
+- **[JavaRESTfulAPI](./JavaRESTfulAPI):** Projeto base de uma API RESTful em Java com Spring Boot.
 
 ---
 *Desafio proposto por [Gleyson Sampaio](https://github.com/glysns).*

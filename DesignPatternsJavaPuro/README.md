@@ -31,7 +31,7 @@ Este projeto demonstra a implementação de alguns padrões de projeto clássico
 
 ## Como Executar
 
-1. Abra o terminal na **raiz do projeto `DesignPatternsJava`**.
+1. Abra o terminal na **raiz do projeto `DesignPatternsJavaPuro`**.
 2. Compile todos os arquivos `.java`:
 
     ```bash

@@ -15,7 +15,7 @@ Este é um projeto Spring Boot, então você pode executá-lo de duas maneiras:
 
 ### 1. Pela Linha de Comando (usando o Gradle Wrapper)
 
-Abra o terminal na raiz do projeto `JavaComSpring` e execute:
+Abra o terminal na raiz do projeto `DesignPatternsJavaComSpring` e execute:
 
 ```bash
 ./gradlew bootRun
@@ -23,6 +23,6 @@ Abra o terminal na raiz do projeto `JavaComSpring` e execute:
 
 ### 2. Pela sua IDE
 
-A maioria das IDEs modernas (IntelliJ, VS Code com o Spring Tools, etc.) reconhecerá este como um projeto Spring Boot. Basta localizar a classe `Application` e executá-la.
+A maioria das IDEs modernas (IntelliJ, VS Code com o Spring Tools, etc.) reconhecerá este como um projeto Spring Boot. Basta localizar a classe `DesignPatternSpringBootMain` e executá-la.
 
 A aplicação subirá na porta `8080` e você poderá interagir com a API REST que criaremos na próxima etapa.

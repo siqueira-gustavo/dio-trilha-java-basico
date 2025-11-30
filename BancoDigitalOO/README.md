@@ -89,10 +89,10 @@ O projeto utiliza a biblioteca **Lombok** para reduzir o código boilerplate (m�
     javac -cp "lib/lombok.jar" -processorpath "lib/lombok.jar" -d bin src/*.java
     ```
 
-4. Execute a classe `Main`, informando ao Java para procurar as classes na pasta `bin`:
+4. Execute a classe `BancoDigitalMain`, informando ao Java para procurar as classes na pasta `bin`:
 
     ```bash
-    java -Dfile.encoding=UTF-8 -cp "bin" Main
+    java -Dfile.encoding=UTF-8 -cp "bin" BancoDigitalMain
     ```
 
     *O comando `-Dfile.encoding=UTF-8` garante a exibição correta de caracteres especiais.*
